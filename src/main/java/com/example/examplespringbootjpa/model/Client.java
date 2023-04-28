@@ -32,6 +32,15 @@ public class Client {
     private String email;
     @Column(name = "address_2")
     private String addressSecondFamily;
+
+    public Client(Long id, String name, Boolean online, Timestamp createAt, String password, String email) {
+        this.id = id;
+        this.name = name;
+        this.online = online;
+        this.createAt = createAt;
+        this.password = password;
+        this.email = email;
+    }
 }
 
 /*
